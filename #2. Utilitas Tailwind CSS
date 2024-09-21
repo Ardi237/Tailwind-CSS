@@ -1,0 +1,213 @@
+A. Umum :
+1. Utilitas di Tailwind CSS adalah sekumpulan class kecil (utility classes) yang dirancang untuk mengatur tampilan elemen HTML secara spesifik. 
+----------------------------------------------------------------------------
+2. Dengan pendekatan utility-first, Tailwind menyediakan class-class yang dapat langsung diterapkan pada elemen untuk mengubah gaya mereka, tanpa perlu menulis CSS kustom. 
+----------------------------------------------------------------------------
+3. Utilitas ini mencakup berbagai properti CSS, seperti layout, tipografi, warna, margin, padding, dan lainnya.
+----------------------------------------------------------------------------
+
+
+
+
+
+B. Layout Utilities : 
+1. Utility ini membantu mengontrol bagaimana elemen ditempatkan dalam halaman web.
+----------------------------------------------------------------------------
+*  Container : Mengatur lebar maksimum konten dan secara otomatis menyesuaikan margin untuk mengehkan elemen.
+<----
+<div class="container mx-auto"></div>
+---->
+----------------------------------------------------------------------------
+*  Display : Mengatur properti `display` elemen (block, inline-block, flex, dll).
+<----
+<div class="block"></div>
+<div class="inline-block"></div>
+---->
+----------------------------------------------------------------------------
+*  Flexbox : Menggunakan Flexbox untuk pengaturan layout.
+<----
+<div class="flex items-center justify-between></div>
+---->
+----------------------------------------------------------------------------
+*  Grid : Menggunakan CSS Grid untuk membuat layout yang lebih kompleks.
+<----
+<div class="grid grid-cols-3 gap-4"></div>
+---->
+----------------------------------------------------------------------------
+
+
+
+
+
+C. Spacing Utilities : 
+1. Mengatur jarak elemen seperti margin dan padding.
+----------------------------------------------------------------------------
+*  Padding : Menambah ruang di dalam elemen/
+<----
+<div class="p-4"></div> <!-- Padding 1rem di semua sisi -->
+<div class="pt-4"></div> <!-- Padding atas 1rem -->
+---->
+----------------------------------------------------------------------------
+2. Margin : Menambah ruang di luar elemen.
+<----
+<div class="m-4"></div> <!-- Margin 1rem di semua sisi -->
+<div class="mt-4"></div> <!-- Margin atas 1rem -->
+---->
+----------------------------------------------------------------------------
+3. Space Between: Membuat jarak antar elemen flex child.
+<----
+<div class="flex space-x-4"></div> <!-- Jarak horizontal 1rem antar elemen -->
+---->
+----------------------------------------------------------------------------
+
+
+
+
+
+D. Typography Utilities :
+1. Mengatur gaya teks dalam elmeen HTML :
+----------------------------------------------------------------------------
+*  Font Size : Mengatur ukuran font.
+<----
+<h1 class="text-4x1"></h1> <!-- Ukuran teks besar -->
+---->
+----------------------------------------------------------------------------
+* Font Weight: Mengatur ketebalan font.
+<----
+<p class="font-bold"></p> <!-- Teks tebal -->
+---->
+----------------------------------------------------------------------------
+*  Text ALignment : Mengatur perataan teks.
+<----
+<p class="text-center"></p> <!-- Teks rata tengah -->
+---->
+----------------------------------------------------------------------------
+*  Line Height : Mengatur tinggi baris.
+<----
+<p class="leading-loose"></p> <!-- Tinggi baris longgar -->
+---->
+----------------------------------------------------------------------------
+
+
+
+
+E. Background Utilities :  
+1. Mengontrol latar belakang elemen.
+----------------------------------------------------------------------------
+*  Background Color : Mengatur warna latar belakang.
+<----
+<div class="bg-blue-500"></div> <!-- Latar belakang biru -->
+---->
+----------------------------------------------------------------------------
+*  Background Image: Menambahkan gambar sebagai latar belakang.
+<----
+<div class="bg-cover bg-center" style="background-image: url('/path/to/image.jpg')"></div>
+---->
+----------------------------------------------------------------------------
+
+
+
+
+F. Border Utilities :
+1. Mengatur gaya, warna, dan lebar border elemen.
+----------------------------------------------------------------------------
+*  Border Width: Mengatur ketebalan border.
+<----
+<div class="border border-2"></div> <!-- Border 2px -->
+--->
+----------------------------------------------------------------------------
+*  Border Radius : Membuat sudut border menjadi bulat.
+<----
+<div class="rounded-full"></div> <!-- Border bulat penuh -->
+---->
+----------------------------------------------------------------------------
+*  Border Color : Mengatur warna border.
+<----
+<div class="border-red-500"></div> <!-- Border merah -->
+---->
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
