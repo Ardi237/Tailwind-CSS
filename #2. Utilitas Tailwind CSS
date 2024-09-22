@@ -10,148 +10,76 @@ A. Umum :
 
 
 
-B. Layout Utilities : 
-1. Utility ini membantu mengontrol bagaimana elemen ditempatkan dalam halaman web.
-----------------------------------------------------------------------------
-*  Container : Mengatur lebar maksimum konten dan secara otomatis menyesuaikan margin untuk mengehkan elemen.
-<----
-<div class="container mx-auto"></div>
----->
-----------------------------------------------------------------------------
-*  Display : Mengatur properti `display` elemen (block, inline-block, flex, dll).
-<----
-<div class="block"></div>
-<div class="inline-block"></div>
----->
-----------------------------------------------------------------------------
-*  Flexbox : Menggunakan Flexbox untuk pengaturan layout.
-<----
-<div class="flex items-center justify-between></div>
----->
-----------------------------------------------------------------------------
-*  Grid : Menggunakan CSS Grid untuk membuat layout yang lebih kompleks.
-<----
-<div class="grid grid-cols-3 gap-4"></div>
----->
-----------------------------------------------------------------------------
+B. Utilities :
+1. Prefight : CSS default yang me-reset properti properti yang berada dalam HTML.
+--------------------------------------------------------------
+2. Layout : Pengaturan tata letak elemen dengan display, position, dll.
+--------------------------------------------------------------
+3. Flexbox & Grid : Sistem layout untuk mengatur elemen dalam satu dimensi (Flexbox) atau dua dimensi (Grid).
+--------------------------------------------------------------
+4. Spacing & Sizing : Mengelola jarak (margin, padding) dan ukuran elemen (width, height).
+--------------------------------------------------------------
+5. Typography : Pengaturan teks seperti font, ukuran, dan spasi.
+--------------------------------------------------------------
+6. Effect & Filters : Menambahkan efek visual seperti bayangan dan transparansi.
+--------------------------------------------------------------
+7. Transition, Transformation & Animation : Mengontrol perubahan visual secara halus dan dinamis pada elemen.
+--------------------------------------------------------------
+8. Tables : Mengatur tabel HTML dengan Utilities.
+-  Table Layout : Mengontrol tata letak tabel, seperti lebar kolom.
+-  Borders : Mengelola garis tepi tabel dan sel.
+-  Cell Spaciong & Padding : Mengatur jarak di dalam dan antara sel.
+-  Text Alignment : Menentukan perataan teks dalam sel.
+-  Responsive Tables : Membuat tabel fleksibel di berbagai ukuran layar.
+--------------------------------------------------------------
 
 
 
 
-
-C. Spacing Utilities : 
-1. Mengatur jarak elemen seperti margin dan padding.
-----------------------------------------------------------------------------
-*  Padding : Menambah ruang di dalam elemen/
-<----
-<div class="p-4"></div> <!-- Padding 1rem di semua sisi -->
-<div class="pt-4"></div> <!-- Padding atas 1rem -->
----->
-----------------------------------------------------------------------------
-2. Margin : Menambah ruang di luar elemen.
-<----
-<div class="m-4"></div> <!-- Margin 1rem di semua sisi -->
-<div class="mt-4"></div> <!-- Margin atas 1rem -->
----->
-----------------------------------------------------------------------------
-3. Space Between: Membuat jarak antar elemen flex child.
-<----
-<div class="flex space-x-4"></div> <!-- Jarak horizontal 1rem antar elemen -->
----->
-----------------------------------------------------------------------------
-
-
-
-
-
-D. Typography Utilities :
-1. Mengatur gaya teks dalam elmeen HTML :
-----------------------------------------------------------------------------
-*  Font Size : Mengatur ukuran font.
-<----
-<h1 class="text-4x1"></h1> <!-- Ukuran teks besar -->
----->
-----------------------------------------------------------------------------
-* Font Weight: Mengatur ketebalan font.
-<----
-<p class="font-bold"></p> <!-- Teks tebal -->
----->
-----------------------------------------------------------------------------
-*  Text ALignment : Mengatur perataan teks.
-<----
-<p class="text-center"></p> <!-- Teks rata tengah -->
----->
-----------------------------------------------------------------------------
-*  Line Height : Mengatur tinggi baris.
-<----
-<p class="leading-loose"></p> <!-- Tinggi baris longgar -->
----->
-----------------------------------------------------------------------------
-
-
-
-
-E. Background Utilities :  
-1. Mengontrol latar belakang elemen.
-----------------------------------------------------------------------------
-*  Background Color : Mengatur warna latar belakang.
-<----
-<div class="bg-blue-500"></div> <!-- Latar belakang biru -->
----->
-----------------------------------------------------------------------------
-*  Background Image: Menambahkan gambar sebagai latar belakang.
-<----
-<div class="bg-cover bg-center" style="background-image: url('/path/to/image.jpg')"></div>
----->
-----------------------------------------------------------------------------
-
-
-
-
-F. Border Utilities :
-1. Mengatur gaya, warna, dan lebar border elemen.
-----------------------------------------------------------------------------
-*  Border Width: Mengatur ketebalan border.
-<----
-<div class="border border-2"></div> <!-- Border 2px -->
---->
-----------------------------------------------------------------------------
-*  Border Radius : Membuat sudut border menjadi bulat.
-<----
-<div class="rounded-full"></div> <!-- Border bulat penuh -->
----->
-----------------------------------------------------------------------------
-*  Border Color : Mengatur warna border.
-<----
-<div class="border-red-500"></div> <!-- Border merah -->
----->
-----------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+C. Features : 
+1. Interactivity :
+*  Tailwind menyediakan utilities untuk menambahkan interaktivitas pada elemen web, terutama pada state hover, focus, active, atau visited.
+--------------------------------------------------------------
+*  Fitur ini memudahkan pengembang untuk mengubah gaya elemen berdasarkan interaksi pengguna tanpa menulis CSS kustom.
+--------------------------------------------------------------
+*  Misalnya, class seperti hover:bg-blue-500 mengubah warna latar belakang ketika pengguna mengarahkan kursor.
+--------------------------------------------------------------
+--------------------------------------------------------------
+2. Responsive Design :
+*  Tailwind mendukung desain responsif dengan sangat baik melalui breakpoints. Setiap utility di Tailwind bisa ditargetkan untuk perangkat dengan berbagai ukuran layar.
+--------------------------------------------------------------
+*  Class seperti sm:, md:, lg:, xl:, dan 2xl: digunakan untuk menyesuaikan styling tergantung pada lebar layar, sehingga memungkinkan desain responsif tanpa perlu menulis media queries secara manual.
+--------------------------------------------------------------
+--------------------------------------------------------------
+3. Dark Mode : 
+*  Tailwind menawarkan mode gelap (dark mode) secara default, yang dapat diaktifkan dengan class dark. 
+--------------------------------------------------------------
+*  Pengembang bisa dengan mudah menerapkan styling yang berbeda untuk dark mode tanpa memodifikasi banyak kode.
+--------------------------------------------------------------
+*  Tailwind juga mendukung mode gelap berbasis preferensi pengguna, menggunakan @media (prefers-color-scheme: dark).
+--------------------------------------------------------------
+--------------------------------------------------------------
+4. Reusability :
+*  Tailwind memudahkan pembuatan komponen yang dapat digunakan kembali melalui class utilitas. 
+--------------------------------------------------------------
+*  Dengan pendekatan utility-first, gaya bisa diterapkan langsung ke elemen tanpa harus membuat CSS khusus untuk tiap komponen.
+--------------------------------------------------------------
+*  Ini menghemat waktu dan membuat kode lebih modular serta mudah di-maintain.
+--------------------------------------------------------------
+--------------------------------------------------------------
+5. Custom Styles :
+*  Tailwind menyediakan fleksibilitas untuk menyesuaikan desain dengan cara yang lebih mudah melalui file konfigurasi tailwind.config.js.
+--------------------------------------------------------------
+*  Kamu dapat menambahkan, memodifikasi, atau meng-override utilities standar Tailwind seperti warna, ukuran, atau padding sesuai kebutuhan proyek Anda.
+--------------------------------------------------------------
+--------------------------------------------------------------
+6. Functions & Directives :
+1. Tailwind menggunakan CSS functions dan directives seperti @apply, @layer, dan @variants untuk meningkatkan efisiensi dalam pengelolaan styling.
+--------------------------------------------------------------
+*  @apply memungkinkan kamu mengguankan kumpulan class utilitis di dalam file CSS.
+--------------------------------------------------------------
+*  @layer memisahkan styling ke dalam berbagai elemen harus tampil dalam state tertentu (seperti hover atau responsive).
+--------------------------------------------------------------
 
 
 
