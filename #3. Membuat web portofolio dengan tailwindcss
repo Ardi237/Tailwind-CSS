@@ -1,0 +1,157 @@
+A. Step by step pembuatan web portofolio :
+1. Menyiapkan  halaman html & menautkan file css atau link CDN.
+-----------------------------------------------------------------------------
+2. Menentukan apa saja yang ingin ditampilkan di web portofolio, seperti navigasi bar, about me, skill, recent work, contact me dan footer.
+-----------------------------------------------------------------------------
+3. Membuat bagian demi bagian yang sudah ditentukan dan mempercantik tampilannya.
+-----------------------------------------------------------------------------
+
+
+
+
+B. Implementasi materi dasar tailwindCss :
+1. Pada pembuatan portofolio ini, kita akan menerapkan materi dasar tailwindCSS dengan menggunakan utilitas-utilitas tailwind antara lain :
+-  Desain Responsif.
+-  Flex box.
+-  Grid.
+-  Padding & margin.
+-  Width & height.
+-  Background.
+-  Color (background color, text-color)
+-  Border.
+-  Typografi
+-  dan utilitas lainnya.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
