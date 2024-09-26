@@ -1,0 +1,188 @@
+A. Umum :
+1. link : https://tailwindcss.com/docs/installation
+--------------------------------------------------------------------------------
+2. Ada 4 pilihan : Tailwind CLI , Using PostCSS, Framework Guides, Play CDN.
+--------------------------------------------------------------------------------
+
+
+
+
+B. Mengguankan link CDN :
+1. Ini bukan cara terbaik terutama untuk production, tapi digunakan untuk pengembangan agar dapat melihat hasil dengan cepat :
+<----
+<script src="https://cdn.tailwindcss.com"></script>
+---->
+--------------------------------------------------------------------------------
+
+
+
+
+C. Menginstall menggunakan Tailwind CLI :
+1. Buka folder project.
+--------------------------------------------------------------------------------
+2. Buka git_bash.
+--------------------------------------------------------------------------------
+3. Karena kita menggunakan NPM , maka kita harus menginisialisasi terlebih dahulu sekalian membuat package .json:
+-  npm init : kamu harus mengisi informasi.
+-  npm init -y : informasi default.
+--------------------------------------------------------------------------------
+4. masukkan kata kunci : npm install -D tailwindcss (jangan lupa buat bikin extension).
+atau jika belum menginstall : npm i -D tailwindcss postcss autoprefixer
+--------------------------------------------------------------------------------
+5. masukkan : npx tailwindcss init 
+--------------------------------------------------------------------------------
+
+
+
+
+
+D. Menginstall file konfigurasi untuk menggunakan tailwind :
+1. kita memasukkan stuktur folder dimana file yang akan menggunakan tailwind :
+<---- (tailwind.config.js)
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+---->
+--------------------------------------------------------------------------------
+2. buat sebuah file css lalu masukkan :
+// ini adalah direction yang dibuat oleh postcss
+<----
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+---->
+// Penjelasan :
+1. Sebelum tailwindCss dijalankan, tailwind melewati `three layer of tailwind`.
+2. Dalam `@tailwind base;` : tailwind akan mereset semua format / style default dari browser.
+3. Dalam `@tailwind components;` : tailwind akan menyediakan berbagai komponen dari librarynya.
+4. Dalam `@tailwind utilities;` : tailwind akan menyediakan class class utilities.
+5. Dan terakhir baru akan membaut file css yang akan diguankan oleh web kita.
+--------------------------------------------------------------------------------
+
+
+
+
+
+E. membuat web default :
+1. jalankan kode berikut :
+<----
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+---->
+// Penjelasan :
+1. ini akan jalan terus selama pemuatan.
+--------------------------------------------------------------------------------
+2. panggil output.css dalam bentuk link ke index.html
+--------------------------------------------------------------------------------
+3. saran : buatlah folder src lalu masukkan input css, lalu buatlah folder css didalam folder src dan masukkan file output.css didalamnya.
+--------------------------------------------------------------------------------
+4. Perhatikan lokasi file seperti html, sesuaikan dengan tailwind.config.js dan perbarui .
+--------------------------------------------------------------------------------
+5. kalau kita mengubah lokasi css maka kita sesuaikan dengan kode : 
+<----
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+---->
+--------------------------------------------------------------------------------
+
+
+
+
+*  misal kita menambahkan kelas kelas dan ingin menghilangkannya selama proses pengembangan maka buka tailwind.config.js dan save.
+*  setelah menyelesaikan pembautan web dan membuka kembali, maka user wajib mengaktifkan kembali :
+<----
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+---->
+-  tetapi jika anda merasa bahwa hal tersebut merepotkan, maka kita hanya perlu  membuka file package.json dan pergi kebagian script lalu menambahkan :
+<----
+"scripts" : {
+  "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+},
+---->
+-  lalu klik save.
+-  lalu tinggal ketik `npm run dev`
+
+
+* ketika kamu menyelesaikan project, kamu dapat mengecilkan size css / minify dengan 
+<----
+npx tailwindcss -D ./public/css/final.css --minify
+---->
+// lokasi file nya bisa diganti, tapi nama file nya beda dengan sebelumnya.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
