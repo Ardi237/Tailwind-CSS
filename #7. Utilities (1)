@@ -1,0 +1,275 @@
+A. Umum :
+1. Utilities :
+-  Preflight.
+-  Spacing & Sizing.
+-  Typography.
+-  Colors.
+-  Background & Border.
+-  Rounding & Shadow.
+-  Pseudo Classes.
+-  Effect & Filters.
+-  Transition, Transformation, & animation.
+-  Layout & Positioning.
+-  Flexbox & Grid.
+-  Responsive Design.
+-  ....
+----------------------------------------------------------------------------------
+
+
+
+
+
+B. Margin :
+1. Margin (m) :
+-  Utility `margin` digunakan untuk memberi jarak luar (space outside) suatu elemen dari elemen lain. 
+-  Margin dapat diterapkan secara global pada semua sisi atau secara spesifik pada satu sisi saja (atas, bawah, kiri, kanan).
+----------------------------------------------------------------------------------
+2. Sintaks Umum:
+*  m-{size}: Mengatur margin untuk semua sisi.
+*  mt-{size}: Mengatur margin di atas (top).
+*  mr-{size}: Mengatur margin di kanan (right).
+*  mb-{size}: Mengatur margin di bawah (bottom).
+*  ml-{size}: Mengatur margin di kiri (left).
+*  mx-{size}: Mengatur margin di kiri dan kanan (horizontal).
+*  my-{size}: Mengatur margin di atas dan bawah (vertical).
+----------------------------------------------------------------------------------
+3. Contoh :
+<----
+<div class="m-4">Margin di semua sisi 1rem (16px)</div>
+<div class="mt-2">Margin atas 0.5rem (8px)</div>
+<div class="mx-auto">Margin kiri dan kanan otomatis (centered)</div>
+---->
+// Penjelasan :
+1. Ukuran yang tersedia :
+Tailwind menyediakan skala margin yang dimulai dari 0, 1, 2, 3, 4, hingga 64, serta nilai seperti auto, px, -mt-2 (margin negatif), dan lain-lain.
+----------------------------------------------------------------------------------
+
+
+
+
+C. Padding (p) :
+1. Utility `padding` digunakan untuk memberi jarak dalam (space inside) suatu elemen dari kontennya sendiri. Sama seperti margin, padding dapat diterapkan pada semua sisi atau secara spesifik pada satu sisi saja.
+----------------------------------------------------------------------------------
+2. Sintaks Umum :
+*  p-{size}: Mengatur padding untuk semua sisi.
+*  pt-{size}: Mengatur padding di atas (top).
+*  pr-{size}: Mengatur padding di kanan (right).
+*  pb-{size}: Mengatur padding di bawah (bottom).
+*  pl-{size}: Mengatur padding di kiri (left).
+*  px-{size}: Mengatur padding di kiri dan kanan (horizontal).
+*  py-{size}: Mengatur padding di atas dan bawah (vertical).
+----------------------------------------------------------------------------------
+3. Contoh :
+<----
+<div class="p-4">Padding di semua sisi 1rem (16px)</div>
+<div class="pt-2">Padding atas 0.5rem (8px)</div>
+<div class="px-6">Padding kiri dan kanan 1.5rem (24px)</div>
+---->
+----------------------------------------------------------------------------------
+4. Ukuran yang tersedia :
+Sama seperti margin, padding juga memiliki skala ukuran yang dimulai dari 0, 1, 2, 3, hingga 64, dan px untuk nilai 1px.
+----------------------------------------------------------------------------------
+
+
+
+
+
+D. Width (w) :
+1. Utility `width` diguankan untuk menentukan lebar elemen. Tailwind menyediakan berbagai ukuran lebar dalam bentuk persentase, piksel, atau ukuran responsif.
+----------------------------------------------------------------------------------
+2. Sintaks Umum :
+-  w-{size}: Mengatur lebar elemen.
+----------------------------------------------------------------------------------
+3. Ukuran yang tersedia :
+-  Lebar tetap : w-1/4 (25%), w-1/2 (50%), w-3/4 (75%), w-full (100%), w-screen (lebar penuh layar), dan w-auto.
+-  w-1/4 (25%), w-1/2 (50%), w-3/4 (75%), w-full (100%), w-screen (lebar penuh layar), dan w-auto.
+----------------------------------------------------------------------------------
+4. Contoh :
+<----
+<div class="w-1/2">Lebar elemen ini 50%</div>
+<div class="w-full">Lebar elemen ini 100%</div>
+<div class="w-screen">Lebar elemen ini seluruh layar</div>
+---->
+----------------------------------------------------------------------------------
+
+
+
+
+E. Height (h) :
+1. Utility `height` digunakan untuk mengatur tinggi elemen. Seperti width, Tailwind juga menyediakan berbagai opsi ukuran tinggi
+----------------------------------------------------------------------------------
+2. Sintaks Umum : h-{size}: Mengatur tinggi elemen.
+----------------------------------------------------------------------------------
+3. Ukuran yang tersedia :
+Tinggi tetap: h-0, h-full (100%), h-screen (tinggi penuh layar), h-auto (otomatis berdasarkan konten), atau unit spesifik seperti h-24, h-48, h-96.
+----------------------------------------------------------------------------------
+4. Contoh :
+<----
+<div class="h-64">Tinggi elemen ini 16rem (256px)</div>
+<div class="h-screen">Tinggi elemen ini 100% dari layar</div>
+---->
+----------------------------------------------------------------------------------
+
+
+
+
+
+F. min-width :
+1. min-width (Lebar Minimum)
+min-width menentukan batas minimum seberapa kecil suatu elemen dapat menyusut dalam lebar. 
+----------------------------------------------------------------------------------
+2. Elemen tidak akan mengecil melebihi nilai min-width, bahkan jika kontennya lebih kecil.
+----------------------------------------------------------------------------------
+3. Sintaks dalam Tailwind: `min-w-{size}`.
+----------------------------------------------------------------------------------
+4. Contoh nilai yang tersedia :
+-  `min-w-0` : Tidak ada lebar minimum.
+-  `min-w-full` : Lebar minimum adalah 100% dari kontainer.
+-  `min-w-screen` : Lebar minimum adalah lebar penuh layar.
+-  Custom sizes seperti min-w-16 (4rem), min-w-48 (12rem), dll.
+----------------------------------------------------------------------------------
+5. Contoh :
+<----
+<div class="min-w-full">Lebar minimum elemen ini adalah 100% dari kontainer.</div>
+---->
+----------------------------------------------------------------------------------
+
+
+
+
+
+G. `max-width` (Lebar maksimum) :
+1. `max-width` menetapkan batas maksimum seberapa besar suatu elemen bisa meluas dalam lebar. Elemen tidak akan lebih lebar dari nilai max-width, bahkan jika kontennya lebih besar.
+----------------------------------------------------------------------------------
+2. Sintaks dalam Tailwind : max-w-{size}.
+---------------------------------------------------------------------------------
+3. Contoh nilai yang tersedia :
+*  max-w-xs: Lebar maksimum sangat kecil (20rem).
+*  max-w-sm: Lebar maksimum kecil (24rem).
+*  max-w-full: Lebar maksimum 100%.
+*  max-w-screen-xl: Lebar maksimum sesuai lebar layar untuk ukuran XL.
+*  max-w-none: Tidak ada batas maksimum (unlimited width).
+---------------------------------------------------------------------------------
+4. Contoh :
+<----
+<div class="max-w-sm">Lebar maksimum elemen ini adalah 24rem (384px).</div>
+---->
+---------------------------------------------------------------------------------
+
+
+
+
+H. min-height : 
+1. min-height (Tinggi Minimum)
+min-height menentukan batas minimum seberapa pendek suatu elemen bisa menyusut dalam tinggi. 
+---------------------------------------------------------------------------------
+2. Ini mencegah elemen menyusut di bawah nilai min-height, menjaga tampilan elemen tetap proporsional.
+---------------------------------------------------------------------------------
+3. Sintaks dalam Tailwind: min-h-{size}.
+---------------------------------------------------------------------------------
+4. Contoh nilai yang tersedia:
+-  min-h-0: Tidak ada tinggi minimum.
+-  min-h-full: Tinggi minimum adalah 100%.
+-  min-h-screen: Tinggi minimum sesuai tinggi layar.
+-  Custom sizes seperti min-h-16 (4rem), min-h-64 (16rem).
+---------------------------------------------------------------------------------
+5. Contoh:
+<----
+<div class="min-h-screen">Tinggi minimum elemen ini sesuai tinggi layar.</div>
+---->
+---------------------------------------------------------------------------------
+
+
+
+
+I. max-height (Tinggi Maksimum)
+1. max-height menetapkan batas maksimum seberapa tinggi suatu elemen dapat meluas. 
+---------------------------------------------------------------------------------
+2. Elemen tidak akan lebih tinggi dari nilai max-height, bahkan jika kontennya lebih besar.
+---------------------------------------------------------------------------------
+3. Sintaks dalam Tailwind: max-h-{size}.
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+4. Contoh nilai yang tersedia:
+-  max-h-0: Tinggi maksimum 0 (elemen tidak terlihat).
+-  max-h-screen: Tinggi maksimum sesuai tinggi layar.
+-  max-h-full: Tinggi maksimum 100% dari kontainer.
+-  Custom sizes seperti max-h-64 (16rem), max-h-none (tidak ada batas maksimum).
+---------------------------------------------------------------------------------
+5. Contoh :
+<----
+<div class="max-h-64">Tinggi maksimum elemen ini adalah 16rem (256px).</div>
+---->
+---------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
